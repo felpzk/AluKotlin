@@ -1,11 +1,9 @@
-package org.example
+package org.example.br.com.alura.alugames.modelo
 
-import com.google.gson.annotations.SerializedName
-
-class Jogo(val titulo:String,
+data class Jogo(val titulo:String,
            val capa:String) {
 
-    val descricao = ""
+    var descricao:String? = null
 
     override fun toString(): String {
         return "Meu Jogo \n" +
