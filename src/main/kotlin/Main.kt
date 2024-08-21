@@ -14,4 +14,9 @@ fun main() {
 
     val json = response.body()
     println(json)
+
+    val meuJogo = Jogo(
+        "Batman: Arkham Asylum Game of the Year Edition",
+        "Batman: Arkham Asylum Game of the Year Edition")
+    println(meuJogo)
 }
