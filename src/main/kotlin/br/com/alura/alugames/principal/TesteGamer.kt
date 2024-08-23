@@ -1,7 +1,7 @@
 import br.com.alura.alugames.modelo.Gamer
 
 fun main() {
-    val gamer1 = Gamer("MikeX", "as@cd.com")
+    val gamer1 = Gamer("Juca", "as@cd.com")
     println(gamer1)
 
     val gamer2 = Gamer("Juca",
@@ -14,8 +14,11 @@ fun main() {
     gamer1.let {
         it.dataNascimento = "23/07/1984"
         it.usuario = "JackSkyWalker"
-        it.idInterno = "JackSkyWalker1234"
+    }.also {
+        println(gamer1.idInterno)
     }
+
+    gamer1.usuario = "jack"
 
     println(gamer1)
 }
